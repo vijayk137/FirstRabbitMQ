@@ -63,7 +63,7 @@ namespace MicroRabbit.Infra.Bus
             {
                 throw new ArgumentException(
                     $"Handler Type { handlerType.Name} already is register for '{eventName}'", nameof(handlerType));
-                    );
+                    
             }
 
             _handlers[eventName].Add(handlerType);
